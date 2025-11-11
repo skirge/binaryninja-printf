@@ -617,19 +617,19 @@ def work_func(bv, func):
     worker.update_analysis_and_handle()
 
 PluginCommand.register(
-    "printf\Override printf call types",
+    "printf\\Override printf call types",
     "Properly types printf-family calls by parsing format strings",
     work
 )
 
 PluginCommand.register_for_function(
-    "printf\Add printf-like function",
+    "printf\\Add printf-like function",
     "Mark a printf-like function for type analysis",
     work_func
 )
 
 PluginCommand.register(
-    "printf\Add printf extension",
+    "printf\\Add printf extension",
     "Add a custom format string spec",
     extend
 )
